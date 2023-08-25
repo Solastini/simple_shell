@@ -1,7 +1,7 @@
 #ifndef _SHELL_H_
 #define _SHELL_H_
 
-iiiiiiii#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -12,12 +12,12 @@ iiiiiiii#include <stdio.h>
 #include <fcntl.h>
 #include <errno.h>
 
-/* to read or write buffers */
+/* for read/write buffers */
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
-/* for chaining command */
+/* for command chaining */
 #define CMD_NORM	0
 #define CMD_OR		1
 #define CMD_AND		2
@@ -38,10 +38,10 @@ extern char **environ;
 
 
 /**
- * struct liststr - list of singly linked
- * @num: field of the number
- * @str: the string
- * @next: next node pts
+ * struct liststr - singly linked list
+ * @num: the number field
+ * @str: a string
+ * @next: points to the next node
  */
 typedef struct liststr
 {

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * _eputs - to print a string of an input
- * @str: the string to print
+ * _eputs - prints an input string
+ * @str: the string to be printed
  *
- * Return: None
+ * Return: Nothing
  */
 void _eputs(char *str)
 {
@@ -20,11 +20,11 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - to script char c to stderr
- * @c: The char to be printed
+ * _eputchar - writes the character c to stderr
+ * @c: The character to print
  *
- * Return: 1 on success.
- * -1 on error, and error number is properly set.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _eputchar(char c)
 {
@@ -42,12 +42,12 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - to script char c to given fd
- * @c: The char to be printed
- * @fd: The file description to be written
+ * _putfd - writes the character c to given fd
+ * @c: The character to print
+ * @fd: The filedescriptor to write to
  *
- * Return: 1 on success.
- * -1 on error, and error number is properly set.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _putfd(char c, int fd)
 {
@@ -67,7 +67,7 @@ int _putfd(char c, int fd)
 /**
  * _putsfd - prints an input string
  * @str: the string to be printed
- * @fd: the file description to be written
+ * @fd: the filedescriptor to write to
  *
  * Return: putchars number
  */
