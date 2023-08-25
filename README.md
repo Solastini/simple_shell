@@ -1,0 +1,24 @@
+0x16. C - Simple Shell
+main.c
+_atoi.c
+builtin.c
+builtin1.c
+environ.c
+errors.c
+errors1.c
+exits.c
+getLine.c
+getenv.c
+getinfo.c
+history.c
+lists.c
+lists1.c
+memory.c
+parser.c
+realloc.c
+shell.h
+shell_loop.c
+string.c
+string1.c
+tokenizer.c
+vars.c
